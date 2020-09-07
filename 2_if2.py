@@ -18,12 +18,12 @@
 
 def main():
     def diff(a, b):
-        if type(a) == str and type(b) == str:
+        if type(a) == str == type(b):
             if a == b:
                 print(1)
-            elif a != b and b.lower() == 'learn':
+            elif b.lower() == 'learn':
                 print(3)
-            elif a != b and len(a) > len(b):
+            elif len(a) > len(b):
                 print(2)
         else:
             print(0)
