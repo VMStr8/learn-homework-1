@@ -11,11 +11,18 @@
 
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+    question = str(input("Как дела? "))
+    while question.lower() != "хорошо":
+        question = str(input("Как дела? "))
 
-    
+
+'''
+Более короткий вариант. Не сразу до недо додумался, поэтому выше оставляю первоначальный.
+
+def ask_user_second():
+    while str(input('Как дела? ')).lower() != 'хорошо':
+        str(input('Как дела? ')).lower()
+'''
+
 if __name__ == "__main__":
     ask_user()

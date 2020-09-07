@@ -15,11 +15,16 @@
     
 """
 
+
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
+    dict_1 = {"как дела": "Хорошо!", "что делаешь?": "Программирую"}
+    while True:
+        question = str(input("Введите ваш запрос: ")).lower()
+        if question in dict_1:
+            print(dict_1[question])
+        else:
+            print("Я не знаю, что тебе ответить на это. Задай вопрос еще раз")
+
+
 if __name__ == "__main__":
     ask_user()
