@@ -17,10 +17,10 @@ def main():
               {'school_class': '6a', 'scores': [4, 4, 5, 4, 4, 3]}]
 
     for i in scores:
-        class_middle = sum(i['scores']) // len(i['scores'])
+        class_middle = sum(i['scores']) / len(i['scores'])
         print(f'Средний балл по классу {i["school_class"]}: {class_middle}')
 
-    school_middle = sum([sum(i['scores']) // len(i['scores']) for i in scores]) // len([i['scores'] for i in scores])
+    school_middle = sum([sum(i['scores']) / len(i['scores']) for i in scores]) / len([i['scores'] for i in scores])
     print(f'Средний балл по школе: {school_middle}')
 
 
